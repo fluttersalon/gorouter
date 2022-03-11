@@ -22,7 +22,7 @@ final router = GoRouter(
     GoRoute(
       path: Page3.path,
       builder: (BuildContext context, GoRouterState state) {
-        final mode = state.params['mode'] ?? 'default';
+        final mode = state.params['mode']!;
         final id = state.params['id'];
         return Page3(mode, id: id);
       },
@@ -30,7 +30,7 @@ final router = GoRouter(
     GoRoute(
       path: Page3.pathNoId,
       builder: (BuildContext context, GoRouterState state) {
-        final mode = state.params['mode'] ?? 'default';
+        final mode = state.params['mode']!;
         return Page3(mode);
       },
     ),
