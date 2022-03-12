@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 
 class Page2 extends StatefulWidget {
   const Page2({Key? key}) : super(key: key);
-  static const id = '/page2';
+  static const path = '/page2';
   @override
   _Page2State createState() => _Page2State();
 }

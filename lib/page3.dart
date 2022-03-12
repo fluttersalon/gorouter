@@ -5,7 +5,7 @@ class Page3 extends StatefulWidget {
   Page3(this.mode, {this.id, Key? key}) : super(key: key);
 
   static const path = '/page3/:mode/:id';
-  static const pathNoId = '/page3/:mode';
+  static const pathWithoutId = '/page3/:mode';
 
   final String mode;
   final String? id;

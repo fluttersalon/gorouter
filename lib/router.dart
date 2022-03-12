@@ -5,16 +5,16 @@ import 'package:gorouter/page2.dart';
 import 'package:gorouter/page3.dart';
 
 final router = GoRouter(
-  initialLocation: Page1.id,
+  initialLocation: Page1.path,
   routes: [
     GoRoute(
-      path: Page1.id,
+      path: Page1.path,
       pageBuilder: (BuildContext context, GoRouterState? state) => MaterialPage(
         child: Page1(),
       ),
     ),
     GoRoute(
-      path: Page2.id,
+      path: Page2.path,
       pageBuilder: (BuildContext context, GoRouterState? state) => MaterialPage(
         child: Page2(),
       ),
@@ -28,7 +28,7 @@ final router = GoRouter(
       },
     ),
     GoRoute(
-      path: Page3.pathNoId,
+      path: Page3.pathWithoutId,
       builder: (BuildContext context, GoRouterState state) {
         final mode = state.params['mode']!;
         return Page3(mode);
